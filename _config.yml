@@ -12,7 +12,7 @@ title                    : "Thomson (Tzu-Ching) Yen"
 title_separator          : "-"
 name                     : &name "Thomson Yen"
 description              : &description "PhD student in Machine Learning"
-url                      : https://https://thomsonyen.github.io/publications/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://thomsonyen.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ThomsonYen/ThomsonYen.github.io"
 
