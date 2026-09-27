@@ -106,3 +106,13 @@ export const quantum = {
 
 export const labFormUrl =
   'https://docs.google.com/forms/d/e/1FAIpQLSe2h_h4rEn1dMzTfs7BKPsxPwvabkqm7I-RkBXv3eI9P41weA/viewform'
+
+// The hidden /secret/ page: a password-gated view counter. The password only hides the
+// page from casual visitors; it ships in the bundle, so it is not real security.
+export const secret = {
+  password: '42',
+  pages: [
+    { key: 'home', label: 'Home' },
+    { key: 'quantum', label: 'Quantum' },
+  ],
+}

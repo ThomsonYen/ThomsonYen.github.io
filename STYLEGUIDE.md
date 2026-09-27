@@ -85,6 +85,8 @@ Transitions are `0.15s ease` for color/border changes and `0.2s ease` for elevat
 | `.fav`             | Linked paper card on `/quantum/` (whole card is the link) | Same card as `.pub` (surface, `--radius`, `20px 22px`, hover lift + accent-tinted border); uppercase 0.78rem venue · year, serif 1.18rem title + `FiArrowUpRight` (→ `--accent` on hover), note in a `--bg` inset like the TL;DR |
 | `.subheading`      | Small uppercase group label                   | 0.78rem/600, `0.08em` tracking, `--text-muted` |
 | `.callout`         | Highlighted note                              | 3px `--accent` left rule, `--accent-soft` fill |
+| `.secret__input`   | Text/password field (`/secret/`)              | 38px tall, `--surface`, 1px `--border`, `--radius-md`; 2px `--accent` focus outline; sits next to a `<button class="button">` |
+| `.stat`            | Number tile on `/secret/`                     | Card (`--surface`, 1px `--border`, `--radius`, `20px 22px`), no hover; uppercase 0.78rem label, serif 1.75rem value; tiles in a `.stats` auto-fit grid (min 160px) |
 
 ### Publications
 
