@@ -33,8 +33,8 @@ function CopyButton({ text }: { text: string }) {
   )
 }
 
-// `collapsed` hides the TL;DR behind a toggle so long lists stay scannable.
-function PublicationCard({ p, collapsed = false }: { p: Publication; collapsed?: boolean }) {
+// The TL;DR sits behind a toggle so the list stays scannable.
+function PublicationCard({ p }: { p: Publication }) {
   const [showCite, setShowCite] = useState(false)
   const [showSummary, setShowSummary] = useState(false)
 
@@ -54,22 +54,18 @@ function PublicationCard({ p, collapsed = false }: { p: Publication; collapsed?:
             </span>
           ))}
         </p>
-        {collapsed ? (
-          // The toggle sits above the text it reveals, so it never moves when clicked.
-          <div className="pub__tldr">
-            <button
-              type="button"
-              className="pub__tldr-toggle"
-              aria-expanded={showSummary}
-              onClick={() => setShowSummary((v) => !v)}
-            >
-              {showSummary ? <FiChevronDown aria-hidden /> : <FiChevronRight aria-hidden />} TL;DR
-            </button>
-            {showSummary && <p className="pub__tldr-text">{p.summary}</p>}
-          </div>
-        ) : (
-          <p className="pub__summary">{p.summary}</p>
-        )}
+        {/* The toggle sits above the text it reveals, so it never moves when clicked. */}
+        <div className="pub__tldr">
+          <button
+            type="button"
+            className="pub__tldr-toggle"
+            aria-expanded={showSummary}
+            onClick={() => setShowSummary((v) => !v)}
+          >
+            {showSummary ? <FiChevronDown aria-hidden /> : <FiChevronRight aria-hidden />} TL;DR
+          </button>
+          {showSummary && <p className="pub__tldr-text">{p.summary}</p>}
+        </div>
 
         <div className="pub__links">
           {p.website && (
@@ -158,7 +154,7 @@ export function Publications() {
       {showAll && (
         <ol className="pubs" id="pubs-others" aria-label="Other publications">
           {rest.map((p) => (
-            <PublicationCard key={p.title} p={p} collapsed />
+            <PublicationCard key={p.title} p={p} />
           ))}
         </ol>
       )}
