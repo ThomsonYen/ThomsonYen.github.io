@@ -1,6 +1,6 @@
 import { FaGithub, FaOrcid } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
-import { FiFileText, FiMail, FiMapPin } from 'react-icons/fi'
+import { FiFileText, FiMail } from 'react-icons/fi'
 import { SiGooglescholar, SiSemanticscholar } from 'react-icons/si'
 import { profile } from '../content'
 
@@ -29,9 +29,6 @@ export function Hero() {
         </h1>
         <p className="hero__role">
           {profile.title} at <strong>{profile.affiliation}</strong>
-        </p>
-        <p className="hero__meta">
-          <FiMapPin aria-hidden /> {profile.location}
         </p>
         <div className="hero__actions">
           <a className="button" href={profile.cv} target="_blank" rel="noreferrer">

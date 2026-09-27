@@ -17,6 +17,13 @@ Almost everything (profile, links, interests, publications) lives in `src/conten
 The About and Contact text are in `src/components/About.tsx` and `src/components/Contact.tsx`.
 Static files (CV, avatar, favicon) are in `public/`.
 
+The CV has two versions that share their content in `cv/shared_data/` (publications in `publications.bib`,
+everything else in `body.tex`); each version only has its own header in `cv.tex`:
+
+- `cv/cv-website`: the public CV. Run `npm run cv` (needs a local TeX install) to rebuild `public/files/YenCV.pdf`.
+- `cv/cv-professional`: adds private details such as the phone number, read from the untracked
+  `cv/cv-professional/private.tex`. Build it with `make professional` in `cv/`; it is never published.
+
 ## Style
 
 `STYLEGUIDE.md` defines the colors, type, spacing, and components. `npm run check:style` enforces its

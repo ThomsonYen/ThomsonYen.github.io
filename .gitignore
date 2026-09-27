@@ -3,3 +3,16 @@ dist
 .DS_Store
 *.local
 *.tsbuildinfo
+
+# CV: LaTeX build output, and private details that must never be published
+cv/**/*.pdf
+cv/**/*.aux
+cv/**/*.bbl
+cv/**/*.bcf
+cv/**/*.blg
+cv/**/*.fdb_latexmk
+cv/**/*.fls
+cv/**/*.log
+cv/**/*.out
+cv/**/*.run.xml
+cv/**/private.tex

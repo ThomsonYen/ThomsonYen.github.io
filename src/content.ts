@@ -5,7 +5,6 @@ export const profile = {
   nativeName: 'Tzu-Ching',
   title: 'PhD student in Machine Learning',
   affiliation: 'Columbia University',
-  location: 'New York',
   avatar: 'images/avatar.jpg',
   email: 'thomson.yen.ty@gmail.com',
   cv: 'files/YenCV.pdf',

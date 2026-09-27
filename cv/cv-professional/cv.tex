@@ -1,0 +1,22 @@
+% Professional CV, for sending directly (applications, recruiters). Not published on the website.
+% Private details live in the untracked private.tex next to this file:
+%   \def\cvphone{412-000-0000}
+\input{../shared_data/preamble.tex}
+
+\def\cvphone{}
+\IfFileExists{private.tex}{\input{private.tex}}{\PackageWarning{cv}{private.tex not found; phone number omitted}}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Tzu-Ching Yen} \\[7.5pt]
+\href{https://linkedin.com/in/thomsonyen}{\raisebox{-0.05\height}\faLinkedin\ thomsonyen} \ $|$ \
+\href{mailto:thomson.yen.ty@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ thomson.yen.ty@gmail.com}%
+\ifx\cvphone\empty\else \ $|$ \ \href{tel:\cvphone}{\raisebox{-0.05\height}\faMobile \ \cvphone}\fi \\[5pt]
+\today \\
+\end{tabularx}
+
+\input{../shared_data/body.tex}
+
+\end{document}

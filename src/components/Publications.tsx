@@ -72,6 +72,11 @@ function PublicationCard({ p, collapsed = false }: { p: Publication; collapsed?:
         )}
 
         <div className="pub__links">
+          {p.website && (
+            <a className="pub__link" href={p.website} target="_blank" rel="noreferrer">
+              <FiGlobe aria-hidden /> Website
+            </a>
+          )}
           {p.paper && (
             <a className="pub__link" href={p.paper} target="_blank" rel="noreferrer">
               <FiFileText aria-hidden /> Paper
@@ -80,11 +85,6 @@ function PublicationCard({ p, collapsed = false }: { p: Publication; collapsed?:
           {p.arxiv && (
             <a className="pub__link" href={p.arxiv} target="_blank" rel="noreferrer">
               <SiArxiv aria-hidden /> arXiv
-            </a>
-          )}
-          {p.website && (
-            <a className="pub__link" href={p.website} target="_blank" rel="noreferrer">
-              <FiGlobe aria-hidden /> Website
             </a>
           )}
           <button
