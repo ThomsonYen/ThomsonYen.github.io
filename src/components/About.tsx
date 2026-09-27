@@ -20,8 +20,8 @@ export function About() {
           Previously, I was a physics enthusiast at the University of Toronto, who failed to
           understand Quantum Field Theory (QFT) and General Relativity (GR). While failing, I was
           fortunate enough to work with the inspiring{' '}
-          <a href="https://www.utsc.utoronto.ca/~aizmaylov/index.html">Artur Izmaylov</a> on quantum
-          computing. I've postponed understanding QFT and GR, but please catch and teach me if you
+          <a href="https://www.utsc.utoronto.ca/~aizmaylov/index.html">Artur Izmaylov</a> on{' '}
+          <a href="quantum/">quantum computing</a>. I've postponed understanding QFT and GR, but please catch and teach me if you
           do.
         </p>
         <p>Outside of productive hours, I enjoy spending time with friends :)</p>

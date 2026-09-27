@@ -68,5 +68,41 @@ export const publications: Publication[] = [
   baby2023online,
 ].map((p) => ({ ...p, summary: p.summary.trim().replace(/\s+/g, ' ') }))
 
+// The /quantum/ page, linked from "quantum computing" in About.
+export const quantum = {
+  intro: "If you're curious, my favorite works from my undergrad time are:",
+  favorites: [
+    {
+      title:
+        'Measuring all compatible operators in one series of single-qubit measurements using unitary transformations',
+      url: 'https://doi.org/10.1021/acs.jctc.0c00008',
+      venue: 'J. Chem. Theory Comput.',
+      year: 2020,
+      note: `
+        still a simple-to-implement idea that many subsequent Pauli-based QC measurement schemes use.
+      `,
+    },
+    {
+      title:
+        'Deterministic improvements of quantum measurements with grouping of compatible operators, non-local transformations, and covariance estimates',
+      url: 'https://doi.org/10.1038/s41534-023-00683-y',
+      venue: 'npj Quantum Information',
+      year: 2023,
+      note: `
+        a very cool Pauli-based measurement grouping using covariance estimates, still afaik SOTA until 2026.
+      `,
+    },
+    {
+      title: 'Quantum measurement for quantum chemistry on a quantum computer',
+      url: 'https://doi.org/10.1021/acs.chemrev.5c00055',
+      venue: 'Chemical Reviews',
+      year: 2025,
+      note: `
+        a summary of QC measurement methods, and our understanding of them.
+      `,
+    },
+  ].map((f) => ({ ...f, note: f.note.trim().replace(/\s+/g, ' ') })),
+}
+
 export const labFormUrl =
   'https://docs.google.com/forms/d/e/1FAIpQLSe2h_h4rEn1dMzTfs7BKPsxPwvabkqm7I-RkBXv3eI9P41weA/viewform'

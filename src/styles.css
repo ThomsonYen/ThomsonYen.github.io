@@ -547,6 +547,68 @@ a:hover {
   font-size: 0.85rem;
 }
 
+/* ---------- Quantum page ---------- */
+.favs {
+  display: grid;
+  gap: 14px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fav {
+  display: grid;
+  gap: 6px;
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.fav:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
+}
+
+.fav__meta {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.fav__title {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  font-weight: 500;
+  line-height: 1.35;
+  transition: color 0.15s ease;
+}
+
+.fav__title svg {
+  vertical-align: -0.1em;
+  color: var(--text-muted);
+}
+
+.fav:hover .fav__title,
+.fav:hover .fav__title svg {
+  color: var(--accent);
+}
+
+.fav__note {
+  margin-top: 6px;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
 /* ---------- Small screens ---------- */
 @media (max-width: 640px) {
   .container {
@@ -584,6 +646,10 @@ a:hover {
     flex-direction: row;
     align-items: center;
     text-align: left;
+  }
+
+  .fav {
+    padding: 18px;
   }
 }
 

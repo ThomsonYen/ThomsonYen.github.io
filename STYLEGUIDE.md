@@ -82,6 +82,7 @@ Transitions are `0.15s ease` for color/border changes and `0.2s ease` for elevat
 | `.pubs-toggle`     | Full-width "show more / fewer" row            | 48px tall, 1px **dashed** `--border`, `--radius`; solid + `--surface` on hover |
 | `.pub__tldr`       | Collapsible TL;DR inside every card           | `--bg` fill (inset against the `--surface` card), `--radius-md`; text `--text-muted` 0.95rem; header row is a full-width `<button>`: chevron + "TL;DR" in 0.78rem/600, `0.08em` tracking, `--text-muted` (→ `--accent` on hover); chevron points right when closed, down when open; text appears **below** the header |
 | `.chip`            | Interest tag                                  | Pill, `--surface`, 1px `--border`; on hover lights up to `--accent-soft` fill with a 40% accent-tinted border (no movement) |
+| `.fav`             | Linked paper card on `/quantum/` (whole card is the link) | Same card as `.pub` (surface, `--radius`, `20px 22px`, hover lift + accent-tinted border); uppercase 0.78rem venue · year, serif 1.18rem title + `FiArrowUpRight` (→ `--accent` on hover), note in a `--bg` inset like the TL;DR |
 | `.subheading`      | Small uppercase group label                   | 0.78rem/600, `0.08em` tracking, `--text-muted` |
 | `.callout`         | Highlighted note                              | 3px `--accent` left rule, `--accent-soft` fill |
 
