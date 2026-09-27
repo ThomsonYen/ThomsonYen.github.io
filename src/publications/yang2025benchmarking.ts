@@ -6,8 +6,10 @@ const paper: Publication = {
   venue: 'Preprint',
   year: 2025,
   arxiv: 'https://arxiv.org/abs/2511.22130',
-  summary:
-    'A benchmark where agents recommend real products to simulated users with latent, heterogeneous preferences, measuring whether they learn and adapt from accumulated experience.',
+  summary: `
+    Real-world recommender has a wealth of live data from users (e.g., clicks, purchases, ratings) and myriad of tools to interactively inquire user preferences (e.g. questions, product displays).
+    This benchmark evaluates LLM recommenders in this realistic and challenging settings, and measures whether they can learn and adapt to users' latent preferences through repeated recommendations.
+  `,
   bibtex: `@article{yang2025benchmarking,
   title={Benchmarking In-context Experiential Learning Through Repeated Product Recommendations},
   author={Yang, Gilbert and Chen, Yaqin and Yen, Thomson and Namkoong, Hongseok},

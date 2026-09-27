@@ -14,8 +14,12 @@ const paper: Publication = {
   year: 2023,
   paper: 'https://neurips.cc/virtual/2023/poster/71994',
   arxiv: 'https://arxiv.org/abs/2305.19570',
-  summary:
-    'We develop novel algorithms that reduce the label shift adaptation problem to online regression and guarantee optimal dynamic regret without any prior knowledge of the extent of drift in the label distribution.',
+  summary: `
+    I implemented the novel algorithms that reduce the label shift adaptation
+    problem to online regression. This algorithm guarantees optimal dynamic
+    regret without any prior knowledge of the extent of drift in the label
+    distribution.
+  `,
   bibtex: `@inproceedings{baby2023online,
   title={Online Label Shift: Optimal Dynamic Regret meets Practical Algorithms},
   author={Baby, Dheeraj and Garg, Saurabh and Yen, Tzu-Ching and Balakrishnan, Sivaraman and Lipton, Zachary and Wang, Yu-Xiang},

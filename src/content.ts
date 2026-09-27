@@ -47,6 +47,8 @@ export type Publication = {
   arxiv?: string
   // Project page, if the paper has one.
   website?: string
+  // A backtick string; wrap it across lines however you like. Line breaks and
+  // indentation are collapsed into single spaces when shown.
   summary: string
   bibtex: string
 }
@@ -63,7 +65,7 @@ export const publications: Publication[] = [
   yang2025benchmarking,
   castellani2025synthtools,
   baby2023online,
-]
+].map((p) => ({ ...p, summary: p.summary.trim().replace(/\s+/g, ' ') }))
 
 export const labFormUrl =
   'https://docs.google.com/forms/d/e/1FAIpQLSe2h_h4rEn1dMzTfs7BKPsxPwvabkqm7I-RkBXv3eI9P41weA/viewform'
