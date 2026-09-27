@@ -19,5 +19,5 @@ Static files (CV, avatar, favicon) are in `public/`.
 
 ## Deploying
 
-`.github/workflows/deploy.yml` builds the site and publishes it to GitHub Pages on every push to the `react` branch.
+`.github/workflows/deploy.yml` builds the site and publishes it to GitHub Pages on every push to `main`.
 To enable it, set **Settings → Pages → Source** to **GitHub Actions**.
