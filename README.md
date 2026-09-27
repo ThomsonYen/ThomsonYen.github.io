@@ -13,7 +13,9 @@ npm run dev        # http://localhost:5173 with hot reload
 
 ## Editing content
 
-Almost everything (profile, links, interests, publications) lives in `src/content.ts`.
+Almost everything (profile, links, interests) lives in `src/content.ts`. Each paper has its own file in
+`src/publications/` (title, authors, links, TL;DR `summary`, BibTeX); to add one, create a file there and
+list it in `publications` in `src/content.ts`, which sets the order (newest first).
 The About and Contact text are in `src/components/About.tsx` and `src/components/Contact.tsx`.
 Static files (CV, avatar, favicon) are in `public/`.
 
