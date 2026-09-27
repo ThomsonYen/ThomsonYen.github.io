@@ -10,6 +10,7 @@ const paper: Publication = {
     'Daniel Guetta',
     'Hongseok Namkoong',
   ],
+  equalContribution: 2,
   venue: 'NeurIPS',
   year: 2025,
   selected: true,

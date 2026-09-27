@@ -3,6 +3,7 @@ import type { Publication } from '../content'
 const paper: Publication = {
   title: 'Benchmarking In-context Experiential Learning Through Repeated Product Recommendations',
   authors: ['Gilbert Yang', 'Yaqin Chen', 'Thomson Yen', 'Hongseok Namkoong'],
+  equalContribution: 3,
   venue: 'Preprint',
   year: 2025,
   arxiv: 'https://arxiv.org/abs/2511.22130',

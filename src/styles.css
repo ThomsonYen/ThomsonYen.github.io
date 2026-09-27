@@ -309,6 +309,12 @@ a:hover {
   border-radius: var(--radius-pill);
   background: var(--surface);
   font-size: 0.9rem;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.chip:hover {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  background: var(--accent-soft);
 }
 
 /* ---------- Publications ---------- */

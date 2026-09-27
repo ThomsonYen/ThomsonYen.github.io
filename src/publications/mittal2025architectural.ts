@@ -3,6 +3,7 @@ import type { Publication } from '../content'
 const paper: Publication = {
   title: 'Architectural and Inferential Inductive Biases for Exchangeable Sequence Modeling',
   authors: ['Daksh Mittal', 'Ang Li', 'Thomson Yen', 'Daniel Guetta', 'Hongseok Namkoong'],
+  equalContribution: 3,
   venue: 'NeurIPS',
   year: 2025,
   paper: 'https://neurips.cc/virtual/2025/loc/san-diego/poster/115035',

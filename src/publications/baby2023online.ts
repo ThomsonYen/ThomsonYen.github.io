@@ -10,6 +10,7 @@ const paper: Publication = {
     'Zachary Lipton',
     'Yu-Xiang Wang',
   ],
+  equalContribution: 3,
   venue: 'NeurIPS',
   year: 2023,
   paper: 'https://neurips.cc/virtual/2023/poster/71994',

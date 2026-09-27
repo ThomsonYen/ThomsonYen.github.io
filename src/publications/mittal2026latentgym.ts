@@ -15,6 +15,7 @@ const paper: Publication = {
     'William Zeng',
     'Hongseok Namkoong',
   ],
+  equalContribution: 3,
   venue: 'Preprint',
   year: 2026,
   arxiv: 'https://arxiv.org/abs/2606.15306',

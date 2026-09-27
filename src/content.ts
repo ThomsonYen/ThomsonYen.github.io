@@ -26,15 +26,16 @@ export const profile = {
 }
 
 export const interests = [
-  'Scaling RL environments for LLMs',
   'Long-horizon, ambiguous tasks (¬ RLVR)',
   'Continual learning',
-  'Memory for learning systems',
+  'Memory and retrieval for LLMs',
 ]
 
 export type Publication = {
   title: string
   authors: string[]
+  // How many of the leading authors contributed equally; they get a *.
+  equalContribution?: number
   // Conference name, or 'Preprint' for papers not yet published.
   venue: string
   year: number

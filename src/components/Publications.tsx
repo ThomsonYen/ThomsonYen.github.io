@@ -51,6 +51,7 @@ function PublicationCard({ p }: { p: Publication }) {
             <span key={a}>
               {i > 0 && ', '}
               {a === selfName ? <strong>{a}</strong> : a}
+              {i < (p.equalContribution ?? 0) && <sup>*</sup>}
             </span>
           ))}
         </p>
@@ -160,7 +161,7 @@ export function Publications() {
       )}
 
       <p className="muted">
-        The full, most up-to-date list is on{' '}
+        * Equal contribution. The full, most up-to-date list is on{' '}
         <a href={profile.links.scholar} target="_blank" rel="noreferrer">
           Google Scholar
         </a>

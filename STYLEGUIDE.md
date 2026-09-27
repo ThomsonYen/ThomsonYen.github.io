@@ -81,7 +81,7 @@ Transitions are `0.15s ease` for color/border changes and `0.2s ease` for elevat
 | `.pub__link`       | Secondary outline button (Paper, arXiv, Website, Cite, OpenReview) | 30px tall, 1px `--border`, `--radius-sm`, icon + label |
 | `.pubs-toggle`     | Full-width "show more / fewer" row            | 48px tall, 1px **dashed** `--border`, `--radius`; solid + `--surface` on hover |
 | `.pub__tldr`       | Collapsible TL;DR inside every card           | `--bg` fill (inset against the `--surface` card), `--radius-md`; text `--text-muted` 0.95rem; header row is a full-width `<button>`: chevron + "TL;DR" in 0.78rem/600, `0.08em` tracking, `--text-muted` (→ `--accent` on hover); chevron points right when closed, down when open; text appears **below** the header |
-| `.chip`            | Interest tag                                  | Pill, `--surface`, 1px `--border` |
+| `.chip`            | Interest tag                                  | Pill, `--surface`, 1px `--border`; on hover lights up to `--accent-soft` fill with a 40% accent-tinted border (no movement) |
 | `.subheading`      | Small uppercase group label                   | 0.78rem/600, `0.08em` tracking, `--text-muted` |
 | `.callout`         | Highlighted note                              | 3px `--accent` left rule, `--accent-soft` fill |
 
@@ -90,6 +90,7 @@ Transitions are `0.15s ease` for color/border changes and `0.2s ease` for elevat
 - Badge text is the conference short name only (`NeurIPS`, never a track like "E&D") or `Preprint`. The year sits under it,
   both centered in the 72px venue column.
 - The title is plain text, not a link; the link row is the only way to open a paper.
+- Equal-contribution authors get a superscript `*` after their name (set `equalContribution` to how many leading authors share it); the section's closing note explains the `*`.
 - The link row is always in this order: `Paper` (always the neurips.cc virtual page, e.g. `neurips.cc/virtual/2025/loc/san-diego/poster/118592`; omitted for preprints) · `arXiv` · `Website` (project page, if any) · `Cite` · `OpenReview` (only when accepted but the neurips.cc page isn't live yet; never alongside `Paper`).
   Icons: `FiFileText`, `SiArxiv`, `FiGlobe`, `LuQuote`, `FiMessageSquare`.
 - Every paper's TL;DR is collapsed inside a `.pub__tldr` block (not a link-row button). **Selected** papers
