@@ -17,6 +17,11 @@ Almost everything (profile, links, interests, publications) lives in `src/conten
 The About and Contact text are in `src/components/About.tsx` and `src/components/Contact.tsx`.
 Static files (CV, avatar, favicon) are in `public/`.
 
+## Style
+
+`STYLEGUIDE.md` defines the colors, type, spacing, and components. `npm run check:style` enforces its
+mechanical rules and runs automatically as part of `npm run build`.
+
 ## Deploying
 
 `.github/workflows/deploy.yml` builds the site and publishes it to GitHub Pages on every push to `main`.
